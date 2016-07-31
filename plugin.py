@@ -87,10 +87,18 @@ class RandomPlugin(Plugin):
         """
 
         # Extract parameters from item
-        interval = item['interval']
-        name = item['source']
-        min = item['min']
-        max = item['max']
-        source = item['source']
+        try:
+            interval = item['interval']
+            name = item['source']
+            min = item['min']
+            max = item['max']
+            source = item['source']
+        except KeyError:
+            logger.debug('KeyError')
+            interval = 1000
+            name = 'KEY_ERROR'
+            min = 100
+            max = 999
+            source = name
 
         return RandomCollector(interval=interval, name=name, min=min, max=max, source=source)
