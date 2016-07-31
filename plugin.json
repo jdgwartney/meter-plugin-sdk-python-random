@@ -5,7 +5,7 @@
   "unsupportedPlatforms": [],
   "tags": "Python Meter Plugin SDK",
   "description": "Example meter plugin using Meter Plugin SDK for Python",
-  "command": "plugin-runner -l debug plugin RandomPlugin",
+  "command": "plugin-runner -l debug -m plugin -c RandomPlugin",
   "icon": "random.png",
   "metrics": [
     "METER_PLUGIN_RANDOM_PYTHON"
