@@ -5,8 +5,7 @@
   "unsupportedPlatforms": [],
   "tags": "Python Meter Plugin SDK",
   "description": "Example meter plugin using Meter Plugin SDK for Python",
-  "command": "pyenv/bin/plugin-runner plugin RandomPlugin",
-  "postExtract": "post-extract",
+  "command": "plugin-runner plugin RandomPlugin",
   "icon": "random.png",
   "metrics": [
     "METER_PLUGIN_RANDOM_PYTHON"
