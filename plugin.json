@@ -1,0 +1,60 @@
+{
+  "name": "TrueSight Pulse Meter Plugin SDK Python Random",
+  "version": "0.9.0",
+  "meterVersionRequired": "4.2.0-611",
+  "unsupportedPlatforms": [],
+  "tags": "Python Meter Plugin SDK",
+  "description": "Example meter plugin using Meter Plugin SDK for Python",
+  "command": "pyenv/bin/plugin-runner plugin RandomPlugin",
+  "postExtract": "post-extract",
+  "icon": "random.png",
+  "metrics": [
+    "METER_PLUGIN_SDK_PYTHON_RANDOM"
+  ],
+  "dashboards": [
+    {
+      "name": "",
+      "layout": "d-w=1&d-h=1&d-pad=5&d-light=0&d-bg=000000&d-g-METER_PLUGIN_SDK_PYTHON_RANDOM=0-0-1-1"
+    }
+  ],
+  "paramArray": {
+    "itemTitle": [
+      "source"
+    ],
+    "schemaTitle": "Instance"
+  },
+  "paramSchema": [
+    {
+      "title": "Min",
+      "name": "min",
+      "description": "Minimum value of the random number",
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    {
+      "title": "Max",
+      "name": "max",
+      "description": "Maximum value of the random number",
+      "type": "integer",
+      "default": 99,
+      "required": true
+    },
+    {
+      "title": "Interval (ms)",
+      "name": "interval",
+      "description": "How often (in milliseconds) to generate measurement.",
+      "type": "integer",
+      "default": 1000,
+      "required": true
+    },
+    {
+      "title": "Source",
+      "name": "source",
+      "description": "The Source to display in the legend for the measurement data.",
+      "type": "string",
+      "default": "RANDOM",
+      "required": true
+    }
+  ]
+}

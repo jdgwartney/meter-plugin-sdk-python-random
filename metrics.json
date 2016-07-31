@@ -1,0 +1,10 @@
+{
+  "METER_PLUGIN_RANDOM_PYTHON": {
+    "defaultAggregate": "avg",
+    "defaultResolutionMS": 1000,
+    "description": "Random Number",
+    "displayName": "Random Number",
+    "displayNameShort": "Random Number",
+    "unit": "number"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "min": 1,
+      "max": 99,
+      "interval": 1000,
+      "source": "red"
+    },
+    {
+      "min": 10,
+      "max": 199,
+      "interval": 3000,
+      "source": "green"
+    },
+    {
+      "min": 100,
+      "max": 1999,
+      "interval": 5000,
+      "source": "blue"
+    }
+  ],
+  "pollInterval": 1000
+}
