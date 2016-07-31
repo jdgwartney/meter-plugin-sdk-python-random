@@ -13,7 +13,7 @@
   ],
   "dashboards": [
     {
-      "name": "",
+      "name": "Random",
       "layout": "d-w=1&d-h=1&d-pad=5&d-light=0&d-bg=000000&d-g-METER_PLUGIN_RANDOM_PYTHON=0-0-1-1"
     }
   ],
